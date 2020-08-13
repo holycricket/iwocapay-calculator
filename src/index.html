@@ -1,0 +1,39 @@
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<div class="body-container">
+  <h1>iwocaPay Payment Calculator</h1>
+  <h3>How much is your invoice for? (£)</h3><br />
+  <div class="container">
+    <div class="amount">
+      <form name=amount>
+    <input value=7500 type = "range" min="150" max="15000" step="50"  id="amount" oninput="rangevalue.value=value" onchange="feeCalculate(this.value, 'amount')"/>        
+    <output id="rangevalue">7500</output>
+      </form>
+    </div>
+  </div>
+  
+
+  <table>
+    <tr>
+      <td><b>Monthly payment</b></td>
+      <td>£<span id="payment">2587.35</span></td>
+      <td><b>Total interest</b></td>
+      <td>£<span id="interest">262.08</span></td>
+    </tr>
+  </table>
+  <table>
+    
+    <tr>
+      <td><b>Seller fee</b></td>
+      <td>£<span id="sellerFee">225.00</span></td>
+    </tr>
+  </table>
+  <br />
+    <p>Move the slider to see an estimate of how your invoice could break down with iwocaPay.
+  </p>
+  <p>
+It calculates your customer's monthly payment amount and how much interest they'll pay if they take the full 90 days at our representative rate of 3.33%. It's just an estimate because your customer's interest rate is based on their business.
+If you've got a question or want a bespoke payment plan, send us an email at <a href="mailto:pay@iwoca.co.uk">pay@iwoca.co.uk</a>.
+  </p>
+  <p>
+  Want some extra confidence your customer will be approved before you send a pay link? Pop their details into our <a href="https://forms.gle/fLFPNXshH68huyZ49">eligibility checker</a> and we'll let you know if we think we can work with them.</p>
+</div>
